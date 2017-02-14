@@ -1,3 +1,11 @@
+<?php
+    if($_COOKIE['acc']<>"welcome") {
+
+        header('Location: ../login.php');
+        exit();
+    };
+?>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -13,12 +21,12 @@
 
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#about" class="navbar-brand"><< Домой</a></li>
+                    <li><a href="../index.php" class="navbar-brand"><< Домой</a></li>
                     <li><a href="cats.php" class="navbar-brand">Категории</a></li>
                     <li><a href="pages.php" class="navbar-brand">Статьи</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../navbar/" class="navbar-brand">Выход >></a></li>
+                    <li><a href="../logout.php" class="navbar-brand">Выход >></a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
